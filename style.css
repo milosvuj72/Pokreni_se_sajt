@@ -13,6 +13,7 @@
 body{
     font-family: var(--bodyfont);
     font-size: var(--font);
+    background-color: var(--primaryColor);
 }
 h1,h2,h3,h4{
     font-weight: 900;
@@ -53,7 +54,7 @@ nav{
 .mainHeader hgroup{
     margin-top: 250px;
 }
-.mainHeader hgroup h1{
+hgroup h1{
     font-size: 6rem;
     color: var(--secondaryColor);
     text-shadow: var(--textShadow);
@@ -148,7 +149,78 @@ footer a{
 footer a:hover{
     color: var(--white);
 }
+/*********
+blogHeader
+*********/
+.blogHeader{
+    background-image: url(img/blog_header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+}
+.blogHeader hgroup{
+    margin-top: 200px;
+}
+.blog .text{
+    background-color: var(--secondaryColor);
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    position: relative;
+    top: -70px;
+    border-radius: 0 50px 50px 50px;
+}
+.featured-image{
+    position: relative;
+}
+.featured-image img{
+    border-radius: 50px 0 0 0;
+}
+.featured-image p{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: var(--secondaryColor);
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid var(--primaryColor);
+}
+.widget{
+    background: var(--secondaryColor);
+    line-height: 2;
+    border-radius: 50px 0 0 0;
+
+}
+.widget ul li a{
+    color: black;
+}
+.widget ul li a:hover{
+    text-decoration: none;
+    color: var(--white);
+    transition: var(--transition);
+}
+/*********
+responsive
+*********/
 @media(max-width:768px){
+    .blogHeader hgroup h1{
+        font-size: 3rem;
+    }
+    .blog .text{
+        font-size: 14px;
+    }
+    .blog .btn{
+        font-size: 16px;
+    }
+    .blog p{
+        font-size: 13px;
+    }
+    .widget h3{
+        font-size: 25px;
+    }
+    .post h3{
+        font-size: 25px;
+    }
     .nav-link{
         margin-left: 15px;
         margin-bottom: 5px;
@@ -177,8 +249,7 @@ footer a:hover{
         height: 160px;
         line-height: 160px;
         font-size: 3rem;
-        margin-bottom: 20px;
-     
+        margin-bottom: 20px;    
     }
     .cta {
         padding: 60px;

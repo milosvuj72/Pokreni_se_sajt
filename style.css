@@ -199,6 +199,21 @@ blogHeader
     color: var(--white);
     transition: var(--transition);
 }
+.contactHeader{
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(img/cta.jpg);
+}
+.contactHeader .contact{
+    color: var(--white);
+}
+.contactHeader .contact h2{
+    padding-top: 70px;
+}
+.contactHeader .contact ul {
+    margin-left: 150px;
+}
+.contactHeader .contact ul i {
+    color: var(--secondaryColor);
+}
 /*********
 responsive
 *********/
@@ -261,6 +276,9 @@ responsive
     }
     .post h3{
         font-size: 25px;
+    }
+    .contactHeader .contact ul {
+        margin-left: 0px;
     }
 
 }
